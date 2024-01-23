@@ -19,6 +19,7 @@ public class task {
         // Setting the user input to age
         student_number = scanner.nextInt();
         
+        
         System.out.println(student_number + " " + name);
         scanner.close();
     }
