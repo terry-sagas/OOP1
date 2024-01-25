@@ -3,10 +3,9 @@ import java.util.Scanner;
 public class test {
         public static void main(String args[]){
         
-        final int retirement = 65;  // Setting the retirement age constant to 65
         int age = 0;                // Setting the age variable to 0
         String name = "";           // Setting the name variable to blank
-        int retirementYears = 0;    // Setting the years to retirement to 0
+
 
         // Setting the scanner varable to gain a input
         Scanner scanner = new Scanner(System.in);
