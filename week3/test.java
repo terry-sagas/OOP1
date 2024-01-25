@@ -6,6 +6,7 @@ public class test {
         int age = 0;                // Setting the age variable to 0
         String name = "";           // Setting the name variable to blank
 
+
         // Setting the scanner varable to gain a input
         Scanner scanner = new Scanner(System.in);
 
