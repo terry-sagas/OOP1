@@ -12,7 +12,7 @@ public class Student {
     // }
     public Student(String fName) {
         this.fName = fName;
-        this.age = 0; // or any default value
+        this.age = 0;
         }
 
     public String getFName() {
