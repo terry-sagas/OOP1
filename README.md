@@ -8,7 +8,8 @@ Phone: 905-391-2867
 
 
 - [Week 2](week2/): First time coding java and Lab 1.
-- [Week 3](week3/): 
+- [Week 3](week3/): Started Classes
+- [Week 4](week4/): Assignment 1 and classes
 
 ## How to Use This Repository
 Navigate through the weeks to find the respective In-Class Exercises (ICE) and Labs. Each week's folder contains the relevant materials for that specific week.
