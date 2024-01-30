@@ -11,15 +11,15 @@ public class Person {
     public Person() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your name: ");
+        System.out.print("Enter your name: ");
         this.name = scanner.nextLine();
 
-        System.out.println("Enter your age: ");
+        System.out.print("Enter your age: ");
         this.age = scanner.nextInt();
 
         scanner.nextLine();
 
-        System.out.println("Enter your gender (M/F): ");
+        System.out.print("Enter your gender (M/F): ");
         this.gender = scanner.nextLine().charAt(0);
         scanner.close();
     }
