@@ -8,8 +8,8 @@ public class Person {
     private int age;
     private char gender;
 
-    public Person() {
-        Scanner scanner = new Scanner(System.in);
+    public Person(Scanner scanner) {
+        
 
         System.out.print("Enter your name: ");
         this.name = scanner.nextLine();
@@ -21,7 +21,7 @@ public class Person {
 
         System.out.print("Enter your gender (M/F): ");
         this.gender = scanner.nextLine().charAt(0);
-        scanner.close();
+        
     }
 
     public String getName() {
@@ -44,16 +44,22 @@ public class Person {
         this.gender = gender;
     }
     public void Introduce(){
-        System.out.println("Name: " + getName());
+        System.out.println("\nName: " + getName());
         System.out.println("Age: " + getAge());
-        System.out.println("Gender: " + getGender());
+        System.out.println("Gender: " + getGender() + "\n");
+        System.out.println();
     }
     
 
        
     public static void main(String[] args) {
-        Person person = new Person();
+        Scanner scanner = new Scanner(System.in);
+        Person person = new Person(scanner);
+        Person person2 = new Person(scanner);
         person.Introduce();
+        person2.Introduce();
+
+        scanner.close();
 
 
     }

@@ -12,15 +12,15 @@ public class Calculator {
         double remainder;
 
 
-        public Calculator() {
-            Scanner scanner = new Scanner(System.in);
+        public Calculator(Scanner scanner) {
+            
 
             System.out.print("The first decimal number: ");
             this.input_one = scanner.nextDouble();
 
             System.out.print("The second decimal number: ");
             this.input_two = scanner.nextDouble();
-            scanner.close();
+            
         }
 
         public double add(){
@@ -58,8 +58,13 @@ public class Calculator {
         }
 
         public static void main(String[] args) {
-            Calculator newCalculator = new Calculator();
+            Scanner scanner = new Scanner(System.in);
+
+            Calculator newCalculator = new Calculator(scanner);
             newCalculator.calculations();
+
+            scanner.close();
+
         }
 
 }

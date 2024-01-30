@@ -11,8 +11,8 @@ public class BurgerShop {
     private double grand_total;
     private double tax_percent;
 
-    public BurgerShop(double burger_price, double tax_percent){
-        Scanner scanner = new Scanner(System.in);
+    public BurgerShop(double burger_price, double tax_percent, Scanner scanner){
+        
 
         System.out.print("Enter Customer Name: ");
         name = scanner.nextLine();
@@ -26,7 +26,7 @@ public class BurgerShop {
 
         grand_total = tax_amount + total_cost;
 
-        scanner.close();
+        
     }
 
     public String getName() {
@@ -91,7 +91,11 @@ public class BurgerShop {
     }
 
     public static void main(String[] args) {
-        BurgerShop new_recept = new BurgerShop(5.99, 0.07);
+        Scanner scanner = new Scanner(System.in);
+
+        BurgerShop new_recept = new BurgerShop(5.99, 0.07, scanner);
         new_recept.Recept();
+
+        scanner.close();
     }
 }
