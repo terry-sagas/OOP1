@@ -1,5 +1,11 @@
 import java.util.Scanner;
-
+/*
+ * Name:        Terry
+ * Date:        1/31/2024
+ * Description: This is assignmet 1 part 3, in this assignment i needed to take 2 user
+ *              input of two values, and calculate the sum, difference, product,
+ *              quotient, and remainder then display it in the console.
+ */
 public class Calculator {
     private double input_one;
     private double input_two;
@@ -43,12 +49,15 @@ public class Calculator {
     }
 
     // Setters
-    public void setInput_one(double input_one) {
-        this.input_one = input_one;
+    public void setInput_one(Scanner scanner) {
+        System.out.print("Enter the first decimal number: ");
+        this.input_one = scanner.nextDouble();
+        
     }
 
-    public void setInput_two(double input_two) {
-        this.input_two = input_two;
+    public void setInput_two(Scanner scanner) {
+        System.out.print("Enter the second decimal number: ");
+        this.input_two = scanner.nextDouble();
     }
 
     // Setters for calculations
@@ -78,6 +87,7 @@ public class Calculator {
     }
 
     public void calculations() {
+        // Displaying the calcualtions
         System.out.println("Sum: " + setSum());
         System.out.println("Difference: " + setDifference());
         System.out.println("Product: " + setProduct());
@@ -86,21 +96,25 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
+        // opening the scanner
         Scanner scanner = new Scanner(System.in);
 
+        // Creating calculator object
         Calculator newCalculator = new Calculator();
 
-        System.out.print("Enter the first decimal number: ");
-        newCalculator.setInput_one(scanner.nextDouble());
+        // Asking the user for the first input and setting it to the input one
+        newCalculator.setInput_one(scanner);
 
         // Buffer
         scanner.nextLine();
 
-        System.out.print("Enter the second decimal number: ");
-        newCalculator.setInput_two(scanner.nextDouble());
+        // Asking the user for the second input and setting it to the input two
+        newCalculator.setInput_two(scanner);
 
+        // Displaying the calculations
         newCalculator.calculations();
 
+        // Closing the scanner
         scanner.close();
     }
 }

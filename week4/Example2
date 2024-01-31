@@ -1,9 +1,0 @@
-// Say hello example
-public static void sayHello(String name){
-    System.out.print("hello ");
-    
-}
-public static void main(String[] args){
-    String name = "Terry";
-    sayHello(name);
-}

@@ -23,29 +23,13 @@ public class BurgerShop {
         
     }
 
-    // Setters
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public void setBurgerPrice(double burger_price) {
-        this.burger_price = burger_price;
-    }
-
-    public void setTaxPercent(double tax_percent) {
-        this.tax_percent = tax_percent;
-    }
-
     // Getters
     public String getName() {
         return name;
     }
 
     public int getQuantity() {
+
         return quantity;
     }
 
@@ -56,6 +40,26 @@ public class BurgerShop {
     public double getTaxPercent() {
         return tax_percent;
     }
+
+    // Setters
+    public void setName(Scanner scanner) {
+        System.out.print("Enter Customer Name: ");
+        this.name = scanner.nextLine();
+    }
+
+    public void setQuantity(Scanner scanner) {
+        System.out.print("Quantity of burgers: ");
+        this.quantity = scanner.nextInt();
+    }
+
+    public void setBurgerPrice(double burger_price) {
+        this.burger_price = burger_price;
+    }
+
+    public void setTaxPercent(double tax_percent) {
+        this.tax_percent = tax_percent;
+    }
+
 
     public void Recept() {
         // Calculations to calculate tax amount, total cost without tax and the grand total
@@ -86,14 +90,10 @@ public class BurgerShop {
         BurgerShop new_receipt = new BurgerShop();
         
         // Asking user for name
-        System.out.print("Enter Customer Name: ");
-        // Setting the name
-        new_receipt.setName(scanner.nextLine());
+        new_receipt.setName(scanner);
 
         // Asking user for amount of burgers
-        System.out.print("Quantity of burgers: ");
-        // Setting the quantitiy
-        new_receipt.setQuantity(scanner.nextInt());
+        new_receipt.setQuantity(scanner);
 
         // Setting the burger price
         new_receipt.setBurgerPrice(burger_price);

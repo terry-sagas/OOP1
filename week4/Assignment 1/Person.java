@@ -13,39 +13,36 @@ public class Person {
     }
 
     // Getters
-    public String getName(Scanner scanner) {
-        // Asking user for name and returning the name
-        System.out.print("Enter your name: ");
-        this.name = scanner.nextLine();
+    public String getName() {
         return name;
     }
 
     public int getAge(Scanner scanner) {
-        System.out.print("Enter your age: ");
-        this.age = scanner.nextInt();
-        scanner.nextLine(); 
         return age;
     }
 
     public char getGender(Scanner scanner) {
-        System.out.print("Enter your gender (M/F): ");
-        this.gender = scanner.nextLine().charAt(0);
+
         return gender;
     }
 
     // Setters
-    public void setName(String name) {
-        this.name = name;
+    public void setName(Scanner scanner) {
+        // Asking user for name and returning the name
+        System.out.print("Enter your name: ");
+        this.name = scanner.nextLine();
     }
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(Scanner scanner) {
+        System.out.print("Enter your age: ");
+        this.age = scanner.nextInt();
     }
-    public void setGender(char gender) {
-        this.gender = gender;
+    public void setGender(Scanner scanner) {
+        System.out.print("Enter your gender (M/F): ");
+        this.gender = scanner.nextLine().charAt(0);
     }
     // Method to introduce
     public void Introduce() {
-        // Printing out message
+        // Printing out users name age and gender
         System.out.println("\nName: " + name);
         System.out.println("Age: " + age);
         System.out.println("Gender: " + gender + "\n");
@@ -58,12 +55,16 @@ public class Person {
         Scanner scanner = new Scanner(System.in);
         Person person = new Person();
         
-        person.getName(scanner);
-        person.getAge(scanner);
-        person.getGender(scanner);
-        
+        // Asking user for name
+        person.setName(scanner);
+        // Asking user for age
+        person.setAge(scanner);
+        scanner.nextLine();
+        // Asking user for gender
+        person.setGender(scanner);
+        // Displaying information
         person.Introduce();
-        
+        // Closing scanner
         scanner.close();
     }
     
