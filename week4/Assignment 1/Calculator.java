@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class Calculator {
@@ -53,38 +51,38 @@ public class Calculator {
         this.input_two = input_two;
     }
 
-    // Methods for calculations
-    public double add() {
+    // Setters for calculations
+    public double setSum() {
         sum = input_one + input_two;
         return sum;
     }
 
-    public double subtract() {
+    public double setDifference() {
         difference = input_one - input_two;
         return difference;
     }
 
-    public double multiply() {
+    public double setProduct() {
         product = input_one * input_two;
         return product;
     }
 
-    public double divide() {
+    public double setQuotient() {
         quotient = input_one / input_two;
         return quotient;
     }
 
-    public double modulus() {
+    public double setRemainder() {
         remainder = input_one % input_two;
         return remainder;
     }
 
     public void calculations() {
-        System.out.println("Sum: " + add());
-        System.out.println("Difference: " + subtract());
-        System.out.println("Product: " + multiply());
-        System.out.println("Quotient: " + divide());
-        System.out.println("Remainder: " + modulus());
+        System.out.println("Sum: " + setSum());
+        System.out.println("Difference: " + setDifference());
+        System.out.println("Product: " + setProduct());
+        System.out.println("Quotient: " + setQuotient());
+        System.out.println("Remainder: " + setRemainder());
     }
 
     public static void main(String[] args) {
@@ -92,9 +90,13 @@ public class Calculator {
 
         Calculator newCalculator = new Calculator();
 
-        System.out.print("The first decimal number: ");
-        
+        System.out.print("Enter the first decimal number: ");
         newCalculator.setInput_one(scanner.nextDouble());
+
+        // Buffer
+        scanner.nextLine();
+
+        System.out.print("Enter the second decimal number: ");
         newCalculator.setInput_two(scanner.nextDouble());
 
         newCalculator.calculations();

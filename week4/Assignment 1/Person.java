@@ -12,7 +12,9 @@ public class Person {
         
     }
 
+    // Getters
     public String getName(Scanner scanner) {
+        // Asking user for name and returning the name
         System.out.print("Enter your name: ");
         this.name = scanner.nextLine();
         return name;
@@ -31,7 +33,7 @@ public class Person {
         return gender;
     }
 
-
+    // Setters
     public void setName(String name) {
         this.name = name;
     }
@@ -41,7 +43,9 @@ public class Person {
     public void setGender(char gender) {
         this.gender = gender;
     }
+    // Method to introduce
     public void Introduce() {
+        // Printing out message
         System.out.println("\nName: " + name);
         System.out.println("Age: " + age);
         System.out.println("Gender: " + gender + "\n");
