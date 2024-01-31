@@ -12,7 +12,7 @@ public class Calculator {
     private double remainder;
 
     public Calculator() {
-        // Empty constructor
+        
     }
 
     // Getters
