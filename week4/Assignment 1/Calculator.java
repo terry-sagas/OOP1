@@ -1,19 +1,19 @@
 import java.util.Scanner;
 /*
- * Name:        Terry
+ * Name:        Terry Sagas
  * Date:        1/31/2024
  * Description: This is assignmet 1 part 3, in this assignment i needed to take 2 user
  *              input of two values, and calculate the sum, difference, product,
  *              quotient, and remainder then display it in the console.
  */
 public class Calculator {
-    private double input_one;
-    private double input_two;
-    private double sum;
-    private double difference;
-    private double product;
-    private double quotient;
-    private double remainder;
+    private double input_one;       // Variable for the first input
+    private double input_two;       // Variable for the second input
+    private double sum;             // Variable for the sum
+    private double difference;      // Variable for the difference
+    private double product;         // Variable for the product
+    private double quotient;        // Variable for the quotient
+    private double remainder;       // Variable for the remainder
 
     public Calculator() {
         
@@ -88,11 +88,11 @@ public class Calculator {
 
     public void calculations() {
         // Displaying the calcualtions
-        System.out.println("Sum: " + setSum());
-        System.out.println("Difference: " + setDifference());
-        System.out.println("Product: " + setProduct());
-        System.out.println("Quotient: " + setQuotient());
-        System.out.println("Remainder: " + setRemainder());
+        System.out.println("Sum: " + setSum());                 // Sum
+        System.out.println("Difference: " + setDifference());   // Difference
+        System.out.println("Product: " + setProduct());         // Product
+        System.out.println("Quotient: " + setQuotient());       // Quotient
+        System.out.println("Remainder: " + setRemainder());     // Remainder
     }
 
     public static void main(String[] args) {

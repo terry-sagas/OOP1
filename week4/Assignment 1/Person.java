@@ -1,12 +1,17 @@
 
 
-
+/*
+ * Name:        Terry Sagas
+ * Date:        1/31/2024
+ * Description: This is assignmet 1 part 1, in this assignment i needed to take 3 user
+ *              input of their name, age and gender, and display it in a specific format.
+ */
 import java.util.Scanner;
 
 public class Person {
-    private String name;
-    private int age;
-    private char gender;
+    private String name;        // Variable for name
+    private int age;            // Variable for age
+    private char gender;        // Variable for age
 
     public Person() {
         
@@ -43,9 +48,9 @@ public class Person {
     // Method to introduce
     public void Introduce() {
         // Printing out users name age and gender
-        System.out.println("\nName: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Gender: " + gender + "\n");
+        System.out.println("\nName: " + name);              // Name
+        System.out.println("Age: " + age);                  // Age
+        System.out.println("Gender: " + gender + "\n");     // Gender
         System.out.println();
     }
     

@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 /*
- * Name:        Terry
+ * Name:        Terry Sagas
  * Date:        1/30/2024
  * Description: This is assignmet 1 part 2, in this assignment i needed to take a 
  *              users input of their name, and quantity of burgers they want, 
