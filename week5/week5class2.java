@@ -11,7 +11,7 @@ public class week5class2 {
 
 
         int[] array1 = {1,2,3,4,5};
-        int[] array2 = {6,7,8,9,19};
+        //int[] array2 = {6,7,8,9,19};
 
         Arrays.fill(array1, 0, 3,100);
         for (int i : array1)
