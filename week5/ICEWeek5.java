@@ -41,7 +41,7 @@ public class ICEWeek5 {
             System.out.println("How old is " + names.get(i) + "?");
             String age = scanner.nextLine();
             names.add(i + 1, age);
-            i++; // Skip the next iteration as we just added an age
+            i++;
         }
         System.out.println("Names and ages: " + names);
         scanner.close();
