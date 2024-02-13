@@ -4,9 +4,13 @@ import java.util.Arrays;
 
 public class exercise3 {
     public static void main(String[] args) {
+        // Creating the array
         int[] array = {5, 2, 8, 3, 1, 11}; 
+        // Creating the squared array
         int[] squaredArray = squareValue(array);
+        // Sorting array
         Arrays.sort(squaredArray);
+        // Printing the sorted array
         System.out.println("Sorted Squared Array:");
         printArray(squaredArray);
     }

@@ -3,9 +3,10 @@ package week5.assignment2;
 
 public class exercise5 {
     public static void main(String[] args) {
-
+        // Creating the multi array
         int[][] data = {{45,20, 40}, {30,40,60}, {34,67,78}};
-        int largestAvgRowIndex = 0;
+
+        int largestAverageIndex = 0;
         double largestAverage = 0;
 
         for (int i = 0; i < data.length; i++) {
@@ -17,15 +18,15 @@ public class exercise5 {
             // Calculate average of current row
             double average = sum / data[i].length;
 
-            // Update largest average and its index if current average is larger
+            // Update largest average and check if its index current average is larger then the old one
             if (average > largestAverage) {
                 largestAverage = average;
-                largestAvgRowIndex = i;
+                largestAverageIndex = i;
             }
         }
 
         // Printing the index and value of row with largest average
-        System.out.println("Row with largest average: " + largestAvgRowIndex);
+        System.out.println("Row with largest average: " + largestAverageIndex);
         System.out.println("Value of largest average: " + largestAverage);
 
     }
