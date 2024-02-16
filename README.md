@@ -11,6 +11,8 @@ Phone: 905-391-2867
 - [Week 3](week3/): Started Classes
 - [Week 4](week4/): [Assignment 1](week4/Assignment%201) and class work
 - [Week 5](week5/): [Assignment 2](week5/assignment2) and arrays
+- [Week 6](week6/): Worked on Strings
+
 ## How to Use This Repository
 Navigate through the weeks to find the respective In-Class Exercises (ICE) and Labs. Each week's folder contains the relevant materials for that specific week.
 
