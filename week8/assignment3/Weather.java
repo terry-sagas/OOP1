@@ -7,7 +7,7 @@ import java.net.URL;
 
 
 public class Weather {
-    private static final String API_KEY = "";
+    private static final String API_KEY = "f220bf7c9ae454a5f5e796abd6f059f6";
     private static final String API_URL_OSHAWA = "http://api.openweathermap.org/data/3.0/onecall/timemachine?lat=39.099724&lon=94.578331&dt=1643803200&appid=";
     private static final String API_URL_TORONTO = "http://api.openweathermap.org/data/3.0/onecall/timemachine?lat=43.651070&lon=79.347015&dt=1643803200&appid=";
     private static final String API_URL_SCARBOROUGH = "http://api.openweathermap.org/data/3.0/onecall/timemachine?lat=43.777702&lon=79.233238&dt=1643803200&appid=";
