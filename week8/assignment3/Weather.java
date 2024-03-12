@@ -1,4 +1,4 @@
-package week8;
+package week8.assignment3;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
