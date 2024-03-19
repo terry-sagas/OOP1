@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class lab3 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        //
         boolean continueProcessing = true;
         String userInput = "";
-        Scanner scanner = new Scanner(System.in);
+        
 
         BasicAccount basicAccount = new BasicAccount();
         SavingsAccount savingsAccount = new SavingsAccount();
