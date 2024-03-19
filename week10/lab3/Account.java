@@ -1,6 +1,6 @@
 package week10.lab3;
 import java.util.Scanner;
-public class Account {
+abstract class Account {
     protected String accountType = "";
     protected long balance = 0;
     protected long accountNumber = 0;
@@ -40,7 +40,7 @@ public class Account {
         this.amountOwed = amountOwed;
     }
 
-    protected void printAccountDetails() {
+    public void printAccountDetails() {
         System.out.println("Account Details:");
         System.out.println("Account type: " + getaccountType());
         System.out.println("Balance: $" + getBalance());
@@ -50,14 +50,14 @@ public class Account {
     }
 
 
-    protected void Deposit(Scanner scanner) {
+    public void Deposit(Scanner scanner) {
         System.out.print("How much do you want to deposit?: ");
         long amount = Long.parseLong(scanner.nextLine());
         balance += amount;
         System.out.println("Account number " + accountNumber + " \nDeposited $" + amount + "\nNew balance: $" + balance + "\n");
     }
 
-    protected void Withdraw(Scanner scanner){
+    public void Withdraw(Scanner scanner){
         System.out.print("How much do you want to withdraw?: ");
         long amount = Long.parseLong(scanner.nextLine());
         balance -= amount;
@@ -82,7 +82,7 @@ class SavingsAccount extends Account{
     private double intrestAmount = 0.02;
     private double withdrawFee = 3;
 
-    @Override protected void Deposit(Scanner scanner){
+    @Override public void Deposit(Scanner scanner){
         System.out.print("How much do you want to deposit? (+2% intrest on deposit): \n");
         long amount = Long.parseLong(scanner.nextLine());
         balance += amount * intrestAmount;
@@ -90,7 +90,7 @@ class SavingsAccount extends Account{
         System.out.println("Account number " + accountNumber + " \nDeposited $" + amount + "\nNew balance: $" + balance + "\nPlus 2% intrest" + "\n");
     }
 
-    @Override protected void Withdraw(Scanner scanner){
+    @Override public void Withdraw(Scanner scanner){
         System.out.print("How much do you want to withdraw? (3$ fees on withdraw in savings accounts): ");
         long amount = Long.parseLong(scanner.nextLine());
         balance -= amount;
@@ -111,7 +111,7 @@ class SavingsAccount extends Account{
 
 class CheckingAccount extends Account{
 
-    @Override protected void Withdraw(Scanner scanner){
+    @Override public void Withdraw(Scanner scanner){
         System.out.print("How much do you want to withdraw? (No Overdraft!): ");
         long amount = Long.parseLong(scanner.nextLine());
         double tempCheckbalance = balance - amount;
