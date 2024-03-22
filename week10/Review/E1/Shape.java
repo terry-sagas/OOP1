@@ -1,4 +1,4 @@
-package week10.Review;
+package week10.Review.E1;
 
 public class Shape {
     protected String colour = "";
@@ -10,11 +10,7 @@ public class Shape {
     public void setColor(String colour) {
         this.colour = colour;
     }
-    
-    public boolean isFilled() {
-        return filled;
-    }
-    
+
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
@@ -24,6 +20,9 @@ public class Shape {
     }
     public double getPerimeter(){
         return 0;
+    }
+    public boolean isFilled() {
+        return filled;
     }
 }
 

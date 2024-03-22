@@ -1,4 +1,4 @@
-package week10.Review;
+package week10.Review.E1;
 
 import java.util.Scanner;
 
