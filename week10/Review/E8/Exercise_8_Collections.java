@@ -7,7 +7,7 @@ public class Exercise_8_Collections {
 
         // Adding students
         studentList.addStudent("Terry");
-        studentList.addStudent("Kahool");
+        studentList.addStudent("Kanav");
         studentList.addStudent("Jon");
 
         // Displaying students
