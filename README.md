@@ -15,8 +15,8 @@ Phone: 905-391-2867
 - [Week 7] reading week
 - [Week 8](week8/): [Assignment 3](week8/assignment3)API and polymorphism
 - [Week 9](week9/): algorithms and interfaces
-- [Week 10](week9/): [Lab3](week10/lab3)
-
+- [Week 10](week10/): [Lab3](week10/lab3)
+- [Week 11](project/): [Final Project](project/)
 ## How to Use This Repository
 Navigate through the weeks to find the respective In-Class Exercises (ICE) and Labs. Each week's folder contains the relevant materials for that specific week.
 
